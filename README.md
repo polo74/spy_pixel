@@ -2,7 +2,7 @@
 
 This is an example of html template with a spy pixel.
 
-A spy pixel is a mechanism to have a read receipt on your mails.
+A spy pixel is a mechanism to implement a read receipt like on your emails.
 
 ## How to use
 
@@ -16,13 +16,17 @@ python -m http.server 14789
 5. Copy and paste the browser content in your mail editor
 6. Send the mail
 
-Now you just have to wait for a request reaching your http server. It means that your message has been read.
+Now you just have to wait for a request reaching your http server. When it is reached, it means that your message has been opened.
 
 ## Disclamer
 
 A lot of mail servers like Gmail, Exchange etc... open the images and store it in a cache. It mean that:
 - the IP address reaching you http server isn't always your recipient IP address,
 - your http server is not always reached if the recipient re-open your mail.
+
+## Note
+
+You can also use a spy pixel to monitor the affluence on a website or on an article.
 
 ## What next
 
